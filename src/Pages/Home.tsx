@@ -2,6 +2,7 @@ import ProductCatalog from "../Components/Card";
 import Header from "../Components/Header";
 import Hero from "../Components/Hero";
 import LatestWorks from "../Components/LatestWorks";
+import About from"../Pages/About";
 
 
 export default function Home() {
@@ -60,7 +61,7 @@ export default function Home() {
 
     return (
       <div>
-
+      <About />
         <Header />
         <Hero />
         
