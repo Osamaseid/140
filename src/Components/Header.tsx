@@ -20,13 +20,13 @@ const Header: React.FC = () => {
             <a href="#" className="text-gray-600 hover:text-teal-800 font-medium px-2 py-1 border-b-2 border-transparent hover:border-teal-800 transition-colors">
               Gallery
             </a>
-            <a href="#" className="text-gray-600 hover:text-teal-800 font-medium px-2 py-1 border-b-2 border-transparent hover:border-blue-950 transition-colors">
+            <a href="#" className="text-gray-600 hover:text-teal-800 font-medium px-2 py-1 border-b-2 border-transparent hover:border-teal-800 transition-colors">
               About
             </a>
           </nav>
 
           {/* Contact Button */}
-          <button className="bg-teal-950 text-white px-6 py-2 rounded-md hover:bg-teal-800 transition-colors">
+          <button className="bg-teal-800 text-white px-6 py-2 rounded-md hover:bg-teal-800 transition-colors">
             Contact Us
           </button>
         </div>

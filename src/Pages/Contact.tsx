@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
-
-function App() {
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -12,7 +12,7 @@ function App() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+    // Handle form submission (e.g., send data to an API)
     console.log('Form submitted:', formData);
   };
 
@@ -24,147 +24,158 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <div className="bg-white border-b">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <nav className="flex items-center gap-6">
-            <a href="#" className="text-gray-600 hover:text-gray-900">Home</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Gallery</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">About</a>
-            <a href="#" className="text-gray-900 font-semibold">Contact</a>
-          </nav>
-        </div>
-      </div>
-
-      {/* Contact Section */}
-      <div className="container mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Contact Form */}
-          <div className="bg-white p-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-8">Let's Get In Touch</h1>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Name*
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email*
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                    Subject*
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
-              </div>
-
+    <>
+    < Header />
+    <div className="container mx-auto px-6 py-12">
+      <div className="grid md:grid-cols-2 gap-8">
+        {/* Contact Form */}
+        <div className="bg-white p-8">
+          <h1 className="text-3xl font-bold text-gray-900 mb-8">Let's Get In Touch</h1>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Message*
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                  Name*
                 </label>
-                <textarea
-                  id="message"
-                  name="message"
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
                   required
-                  value={formData.message}
+                  value={formData.name}
                   onChange={handleChange}
-                  rows={4}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                ></textarea>
+                />
               </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+              </div>
+            </div>
 
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors"
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                  Email*
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                  Subject*
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                Message*
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                value={formData.message}
+                onChange={handleChange}
+                rows={4}
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-teal-800 text-white py-3 px-6 rounded-md hover:bg-teal-900 transition-colors"
+            >
+              Send to Us
+            </button>
+          </form>
+
+          {/* Contact Information */}
+          <div className="mt-12 space-y-4">
+            <div className="flex items-center gap-3">
+              <svg
+                className="w-5 h-5 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Send to Us
-              </button>
-            </form>
-
-            {/* Contact Information */}
-            <div className="mt-12 space-y-4">
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-blue-600" />
-                <span>+251 90 000 0000</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-blue-600" />
-                <span>contact@140.com</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-blue-600" />
-                <div>
-                  <p>Bole Road, Addis Ababa, Ethiopia</p>
-                  <p>Morning Star Mall, Bole Road, Addis Ababa, Ethiopia</p>
-                </div>
+                <path d="M3 3h18v18H3z" />
+                <path d="M16 6h-2v2h2V6zm0 4h-2v2h2v-2zm0 4h-2v2h2v-2zm-4-8h-2v2h2V6zm0 4h-2v2h2v-2zm0 4h-2v2h2v-2zM8 6H6v2h2V6zm0 4H6v2h2v-2zm0 4H6v2h2v-2z" />
+              </svg>
+              <span>+251 90 000 0000</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <svg
+                className="w-5 h-5 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 2a10 10 0 00-10 10c0 4.418 3.582 8 8 8s8-3.582 8-8-3.582-10-8-10zm0 18a8 8 0 110-16 8 8 0 010 16z" />
+                <path d="M12 6a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z" />
+              </svg>
+              <span>contact@140.com</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <svg
+                className="w-5 h-5 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5zm0 20l10-5-10-5-10 5 10 5zm0-8l10-5-10-5-10 5 10 5z" />
+              </svg>
+              <div>
+                <p>Bole Road, Addis Ababa, Ethiopia</p>
+                <p>Morning Star Mall, Bole Road, Addis Ababa, Ethiopia</p>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Map */}
-          <div className="h-full min-h-[600px] bg-gray-100 rounded-lg overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15763.171618559!2d38.7892!3d9.0252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sBole%2C%20Addis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1709672135185!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+        {/* Map */}
+        <div className="h-full min-h-[600px] bg-gray-100 rounded-lg overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15763.171618559!2d38.7892!3d9.0252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sBole%2C%20Addis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1709672135185!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
-
-      
+    </div>
+    <Footer />
+    </>
   );
-}
+};
 
-export default App;
+export default Contact;

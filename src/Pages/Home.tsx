@@ -3,8 +3,7 @@ import Header from "../Components/Header";
 import Hero from "../Components/Hero";
 import LatestWorks from "../Components/LatestWorks";
 import Footer from "../Components/Footer";
-
-
+import Contact from "../Pages/Contact";
 export default function Home() {
 
     const products = [
@@ -61,6 +60,7 @@ export default function Home() {
 
     return (
       <div>
+        <Contact />
         <Header />
         <Hero />
         
