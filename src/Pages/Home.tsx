@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Hero from "../Components/Hero";
 import LatestWorks from "../Components/LatestWorks";
 
+
 export default function Home() {
 
     const products = [
@@ -59,10 +60,13 @@ export default function Home() {
 
     return (
       <div>
+
         <Header />
         <Hero />
+        
         <ProductCatalog products={products} featuredProduct={featuredProduct} />  
         <LatestWorks largeImages={largeImages} smallImages={smallImages} />
+      
       </div>
     );
   }

@@ -13,7 +13,7 @@ Elevate Every Space with Unmatched Quality and Endless Variety
 <p className="text-lg text-gray-600 mb-8">
 Discover premium aluminum and glass solutions crafted to perfection—where durability meets design, and every choice reflects your unique vision.
 </p>
-<button className="bg-teal-800 text-white px-8 py-3 rounded-none flex items-center hover:bg-teal-900 transition-colors w-fit">
+<button className="bg-teal-950 text-white px-8 py-3 rounded-none flex items-center hover:bg-teal-900 transition-colors w-fit">
 Browse Our Catalog
 </button>
 </div>
