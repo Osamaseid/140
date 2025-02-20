@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -25,7 +27,7 @@ const Contact = () => {
 
   return (
     <>
-    < Header />
+    <Header />
     <div className="container mx-auto px-6 py-12">
       <div className="grid md:grid-cols-2 gap-8">
         {/* Contact Form */}
@@ -119,38 +121,15 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="mt-12 space-y-4">
             <div className="flex items-center gap-3">
-              <svg
-                className="w-5 h-5 text-blue-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M3 3h18v18H3z" />
-                <path d="M16 6h-2v2h2V6zm0 4h-2v2h2v-2zm0 4h-2v2h2v-2zm-4-8h-2v2h2V6zm0 4h-2v2h2v-2zm0 4h-2v2h2v-2zM8 6H6v2h2V6zm0 4H6v2h2v-2zm0 4H6v2h2v-2z" />
-              </svg>
+              <FaPhone className="w-5 h-5 text-blue-600" />
               <span>+251 90 000 0000</span>
             </div>
             <div className="flex items-center gap-3">
-              <svg
-                className="w-5 h-5 text-blue-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 2a10 10 0 00-10 10c0 4.418 3.582 8 8 8s8-3.582 8-8-3.582-10-8-10zm0 18a8 8 0 110-16 8 8 0 010 16z" />
-                <path d="M12 6a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z" />
-              </svg>
+              <FaEnvelope className="w-5 h-5 text-blue-600" />
               <span>contact@140.com</span>
             </div>
             <div className="flex items-start gap-3">
-              <svg
-                className="w-5 h-5 text-blue-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5zm0 20l10-5-10-5-10 5 10 5zm0-8l10-5-10-5-10 5 10 5z" />
-              </svg>
+              <FaMapMarkerAlt className="w-5 h-5 text-blue-600" />
               <div>
                 <p>Bole Road, Addis Ababa, Ethiopia</p>
                 <p>Morning Star Mall, Bole Road, Addis Ababa, Ethiopia</p>
