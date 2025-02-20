@@ -25,11 +25,11 @@ const About: React.FC = () => {
     <Header />
     <div>
       {/* Hero Banner */}
-      <div className="w-full h-48 bg-yellow-400">
+      <div className=" w-full h-48">
         <img
           src={almunium}
           alt="Corporate Banner"
-          className="w-full h-full object-cover"
+          className=" w-full h-full px-24 py-4 object-cover"
         />
       </div>
 
@@ -80,54 +80,54 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      {/* The Team Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-12">The Team</h2>
-          <p className="text-gray-600 mb-12 max-w-3xl">
-            Led by visionaries and experts in their respective fields, our team brings together diverse perspectives and extensive experience to drive innovation and excellence.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            {[
-              {
-                name: "Marcus Johnson",
-                role: "CEO",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300"
-              },
-              {
-                name: "Sarah Chen",
-                role: "CTO",
-                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300"
-              },
-              {
-                name: "David Williams",
-                role: "COO",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300"
-              },
-              {
-                name: "Rachel Thompson",
-                role: "CMO",
-                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300"
-              },
-              {
-                name: "Michael Foster",
-                role: "CFO",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300"
-              }
-            ].map((member) => (
-              <div key={member.name} className="bg-white p-4 rounded-lg shadow-sm">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full aspect-square rounded-lg object-cover mb-4"
-                />
-                <h3 className="font-semibold text-lg">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
-              </div>
-            ))}
-          </div>
+     {/* Testimonials Section */}
+<div className="bg-gray-50 py-16">
+  <div className="container mx-auto px-6">
+    <h2 className="text-2xl font-bold mb-12">Testimonials</h2>
+    <p className="text-gray-600 mb-12 max-w-3xl">
+      Hear what our clients have to say about us and our services.
+    </p>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          name: "Alice Smith",
+          testimonial: "This company transformed our business! Their expertise was invaluable.",
+          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300"
+        },
+        {
+          name: "John Doe",
+          testimonial: "Exceptional service and support. I couldn't be happier!",
+          image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300"
+        },
+        {
+          name: "Emily Johnson",
+          testimonial: "A great experience from start to finish. Highly recommend!",
+          image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300"
+        },
+        {
+          name: "Michael Brown",
+          testimonial: "Their team truly cares about their clients. Fantastic results!",
+          image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300"
+        },
+        {
+          name: "David Wilson",
+          testimonial: "Professional, reliable, and results-driven. Top-notch service!",
+          image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300"
+        }
+      ].map((testimonial) => (
+        <div key={testimonial.name} className="bg-white p-4 rounded-lg shadow-sm">
+          <img
+            src={testimonial.image}
+            alt={testimonial.name}
+            className="w-full aspect-square rounded-lg object-cover mb-4"
+          />
+          <h3 className="font-semibold text-lg">{testimonial.name}</h3>
+          <p className="text-gray-600 italic">"{testimonial.testimonial}"</p>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
     </div>
     </>
   );
