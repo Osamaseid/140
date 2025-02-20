@@ -2,7 +2,7 @@ import ProductCatalog from "../Components/Card";
 import Header from "../Components/Header";
 import Hero from "../Components/Hero";
 import LatestWorks from "../Components/LatestWorks";
-import About from"../Pages/About";
+import Footer from "../Components/Footer";
 
 
 export default function Home() {
@@ -61,13 +61,13 @@ export default function Home() {
 
     return (
       <div>
-      <About />
         <Header />
         <Hero />
         
         <ProductCatalog products={products} featuredProduct={featuredProduct} />  
         <LatestWorks largeImages={largeImages} smallImages={smallImages} />
-      
+        < Footer />
       </div>
+
     );
   }

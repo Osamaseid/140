@@ -7,6 +7,7 @@ import sunlightLogo from '../assets/partenerslogo/Tsehay Real Estate Logo.png';
 import greenLogo from '../assets/partenerslogo/Gift Real Estate Logo.png';
 import React from 'react';
 import almunium from '../assets/almunium.png'
+import Footer from "../Components/Footer";
 
 
 const About: React.FC = () => {
@@ -129,6 +130,7 @@ const About: React.FC = () => {
   </div>
 </div>
     </div>
+    <Footer />
     </>
   );
 };
