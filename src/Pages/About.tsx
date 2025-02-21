@@ -28,7 +28,7 @@ const About: React.FC = () => {
       {/* Hero Banner */}
       <div className=" w-full h-48">
         <img
-          src="https://images.unsplash.com/photo-1635757594073-eabdcec49051?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z2xhc3MlMjBmb3IlMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+          src="https://images.unsplash.com/photo-1654105727849-1b9d39357f16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2xhc3MlMjBmYWNhZGV8ZW58MHx8MHx8fDA%3D"
           className=" w-full h-full px-24 py-4 object-cover"
         />
       </div>
@@ -46,7 +46,7 @@ const About: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {partnerLogos.map((partner, index) => (
-            <div key={index} className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
+            <div key={index} className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
               <img 
                 src={partner.src} 
                 alt={partner.alt} 

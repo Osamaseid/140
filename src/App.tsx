@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Gallery from './Pages/Gallery';
-
+import Card from "./Components/Card";
 // Sample image data for the Gallery component
 const largeImages = [
   { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800&h=600', alt: 'Large Image 1' },
@@ -25,6 +25,7 @@ function App() {
         <Route path="/gallery" element={<Gallery largeImages={largeImages} smallImages={smallImages} />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/card" element={<Card />} />
       </Routes>
     </Router>
   );
