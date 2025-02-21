@@ -7,18 +7,18 @@ import Footer from "../Components/Footer";
 export default function Home() {
   const products = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?auto=format&fit=crop&q=80&w=300&h=300",
-      title: "Aluminum Sheet",
+      imageSrc: "https://media.istockphoto.com/id/1341378132/photo/side-view-of-open-plan-kitchen-with-living-room-and-garden-view-from-the-window.webp?a=1&b=1&s=612x612&w=0&k=20&c=VZq0Ccf-RncHZ07_ju54BLNcPYoYAuMF4UvCaN7KbcU=",
+      title: " Windows and Doors",
       description: "Quality Germany Aluminum Sheet",
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1611288875785-f62fb9b044a7?auto=format&fit=crop&q=80&w=300&h=300",
-      title: "Aluminum Sheet",
+      imageSrc: "https://media.istockphoto.com/id/1470134784/photo/empty-room-interior-background-natural-light-interior-of-modern-and-minimalist-style-living.webp?a=1&b=1&s=612x612&w=0&k=20&c=UUMin9iCPgmL8eWHy6PKfrVwICXCiRz_c7FgTycQLhE=",
+      title: "Partition Works",
       description: "Quality Germany Aluminum Sheet",
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1605792657660-596af9009e82?auto=format&fit=crop&q=80&w=300&h=300",
-      title: "Aluminum Sheet",
+      imageSrc: "https://images.unsplash.com/photo-1724134969363-cbc50540a8d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8QWx1bWludW0lMjBIYW5kcmFpbHMlMjBhbmQlMjBHdWFyZHJhaWxzfGVufDB8fDB8fHww",
+      title: "Aluminum Handrails and Guardrails",
       description: "Quality Germany Aluminum Sheet",
     },
   ];
@@ -26,18 +26,12 @@ export default function Home() {
   // Adjusted to be an array for multiple featured products
   const featuredProducts = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?auto=format&fit=crop&q=80&w=1200&h=800",
-      title: "Aluminum Sheet",
-      material: "Aluminum",
-      dimensions: "W 86.61 in × D 41.34 in × H 29.53 in",
-      price: "1,200 ETB",
+      imageSrc: "https://media.istockphoto.com/id/1486944922/photo/frameless-laminated-glass-railing.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZQbb-xlWZB3pj8KoaU9_JpkzGnuS9SIHRVDm-lxYtlY=",
+    
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1611288875785-f62fb9b044a7?auto=format&fit=crop&q=80&w=1200&h=800",
-      title: "Another Aluminum Sheet",
-      material: "Aluminum",
-      dimensions: "W 70 in × D 30 in × H 25 in",
-      price: "800 ETB",
+      imageSrc: "https://media.istockphoto.com/id/1200682133/photo/balcony-railing-made-of-stainless-steel.webp?a=1&b=1&s=612x612&w=0&k=20&c=NmDR7yrblnLIpgQYuKByQ4Yri7VyVkrWX-COW28PnGA=",
+     
     }
   ];
 
