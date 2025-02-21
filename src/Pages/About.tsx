@@ -6,7 +6,6 @@ import marriottLogo from '../assets/partenerslogo/Marriott Logo.png';
 import sunlightLogo from '../assets/partenerslogo/Tsehay Real Estate Logo.png';
 import greenLogo from '../assets/partenerslogo/Gift Real Estate Logo.png';
 import React from 'react';
-import almunium from '../assets/almunium.png'
 import Footer from "../Components/Footer";
 
 
@@ -28,8 +27,7 @@ const About: React.FC = () => {
       {/* Hero Banner */}
       <div className=" w-full h-48">
         <img
-          src={almunium}
-          alt="Corporate Banner"
+          src="https://images.unsplash.com/photo-1635757594073-eabdcec49051?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z2xhc3MlMjBmb3IlMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
           className=" w-full h-full px-24 py-4 object-cover"
         />
       </div>
@@ -42,7 +40,7 @@ const About: React.FC = () => {
         </p>
       </div>
 
-      {/* Partner Logos */}
+      {/* Partners Logos */}
       <div className="bg-gray-50 py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
@@ -105,16 +103,7 @@ const About: React.FC = () => {
           testimonial: "A great experience from start to finish. Highly recommend!",
           image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300"
         },
-        {
-          name: "Michael Brown",
-          testimonial: "Their team truly cares about their clients. Fantastic results!",
-          image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300"
-        },
-        {
-          name: "David Wilson",
-          testimonial: "Professional, reliable, and results-driven. Top-notch service!",
-          image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300"
-        }
+       
       ].map((testimonial) => (
         <div key={testimonial.name} className="bg-white p-4 rounded-lg shadow-sm">
           <img
