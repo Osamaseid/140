@@ -52,7 +52,7 @@ export default function Home() {
       alt: "Window installation",
     },
     {
-      src: "https://images.unsplash.com/photo-1614159102354-a56945099f9c?auto=format&fit=crop&q=80&w=600&h=400",
+      src: "https://images.unsplash.com/photo-1484825939385-ad29f324ff1c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "Glass facade",
     },
     {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface LatestWorksProps {
   largeImages: { src: string; alt: string }[];
@@ -6,43 +7,39 @@ interface LatestWorksProps {
 }
 
 const LatestWorks: React.FC<LatestWorksProps> = ({ largeImages, smallImages }) => {
+  const navigate = useNavigate();
+
+  const navigateToGallery = () => {
+    navigate('/gallery');
+  };
+
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Latest Works and Projects</h2>
-          
+
           <div className="grid grid-cols-12 gap-6">
             {/* Large Images */}
-            <div className="col-span-12 md:col-span-6">
-              <img 
-                src={largeImages[0].src}
-                alt={largeImages[0].alt}
-                className="w-full h-80 object-cover"
-              />
-            </div>
-            <div className="col-span-12 md:col-span-6">
-              <img 
-                src={largeImages[1].src}
-                alt={largeImages[1].alt}
-                className="w-full h-80 object-cover"
-              />
-            </div>
+            {largeImages.map((image, index) => (
+              <div key={index} className="col-span-12 md:col-span-6">
+                <img src={image.src} alt={image.alt}  className="w-full h-80 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"/>
+              </div>
+            ))}
 
             {/* Small Images */}
             {smallImages.map((image, index) => (
               <div key={index} className="col-span-12 md:col-span-4">
-                <img 
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-64 object-cover"
-                />
+                <img src={image.src} alt={image.alt}  className="w-full h-80 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg" />
               </div>
             ))}
           </div>
 
           <div className="mt-8 text-center">
-            <button className="bg-cyan-900 text-white px-8 py-3 rounded-none inline-flex items-center hover:bg-teal-900 transition-colors">
+            <button
+              onClick={navigateToGallery}
+              className="bg-cyan-900 text-white px-8 py-3 rounded-none inline-flex items-center hover:bg-teal-900 transition-colors"
+            >
               See More
             </button>
           </div>

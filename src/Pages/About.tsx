@@ -1,4 +1,5 @@
 import Header from "../Components/Header";
+import { AiFillStar } from "react-icons/ai";
 import hiltonLogo from '../assets/partenerslogo/Hilton Logo.png';
 import regencyLogo from '../assets/partenerslogo/Hyatt Regency Logo.png';
 import legacyLogo from '../assets/partenerslogo/Legacy Real estate Logo.png';
@@ -80,7 +81,7 @@ const About: React.FC = () => {
       </div>
 
      {/* Testimonials Section */}
-<div className="bg-gray-50 py-16">
+     <div className="bg-gray-50 py-16">
   <div className="container mx-auto px-6">
     <h2 className="text-2xl font-bold mb-12">Testimonials</h2>
     <p className="text-gray-600 mb-12 max-w-3xl">
@@ -91,33 +92,51 @@ const About: React.FC = () => {
         {
           name: "Alice Smith",
           testimonial: "This company transformed our business! Their expertise was invaluable.",
-          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300"
+          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300",
+          rating: 5
         },
         {
           name: "John Doe",
           testimonial: "Exceptional service and support. I couldn't be happier!",
-          image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300"
+          image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300",
+          rating: 4
         },
         {
           name: "Emily Johnson",
           testimonial: "A great experience from start to finish. Highly recommend!",
-          image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300"
+          image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300",
+          rating: 5
         },
-       
       ].map((testimonial) => (
-        <div key={testimonial.name} className="bg-white p-4 rounded-lg shadow-sm">
+        <div 
+          key={testimonial.name} 
+          className="bg-white p-6 rounded-lg shadow-sm transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+        >
           <img
             src={testimonial.image}
             alt={testimonial.name}
             className="w-full aspect-square rounded-lg object-cover mb-4"
           />
           <h3 className="font-semibold text-lg">{testimonial.name}</h3>
+          
+          {/* Star Rating using React Icons */}
+          <div className="flex items-center mb-2">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <AiFillStar 
+                key={i} 
+                size={20} 
+                className={i < testimonial.rating ? "text-yellow-500" : "text-gray-300"}
+              />
+            ))}
+          </div>
+
           <p className="text-gray-600 italic">"{testimonial.testimonial}"</p>
         </div>
       ))}
     </div>
   </div>
 </div>
+
     </div>
     <Footer />
     </>
