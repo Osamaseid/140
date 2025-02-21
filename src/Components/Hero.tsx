@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           <p className="text-lg text-gray-600 mb-8">
             Discover premium aluminum and glass solutions crafted to perfection—where durability meets design, and every choice reflects your unique vision.
           </p>
-          <button className="bg-teal-800 text-white px-8 py-3 rounded-none flex items-center hover:bg-teal-900 transition-colors w-fit group">
+          <button className="bg-cyan-900 text-white px-8 py-3 rounded-none flex items-center hover:bg-teal-900 transition-colors w-fit group">
             Browse Our Catalog
             <FaArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
           </button>
