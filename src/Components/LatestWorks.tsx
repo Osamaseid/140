@@ -42,7 +42,7 @@ const LatestWorks: React.FC<LatestWorksProps> = ({ largeImages, smallImages }) =
           </div>
 
           <div className="mt-8 text-center">
-            <button className="bg-teal-800 text-white px-8 py-3 rounded-none inline-flex items-center hover:bg-teal-900 transition-colors">
+            <button className="bg-cyan-900 text-white px-8 py-3 rounded-none inline-flex items-center hover:bg-teal-900 transition-colors">
               See More
             </button>
           </div>

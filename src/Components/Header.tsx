@@ -20,21 +20,21 @@ const Header: React.FC = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-teal-800 font-medium px-2 py-1 border-b-2 border-teal-800">
+            <a href="/" className="text-cyan-900 font-medium px-2 py-1 border-b-2 border-cyan-900">
               Home
             </a>
-            <a href="/gallery" className="text-gray-600 hover:text-teal-800 font-medium px-2 py-1 border-b-2 border-transparent hover:border-teal-800 transition-colors">
+            <a href="/gallery" className="text-gray-600 hover:text-cyan-900 font-medium px-2 py-1 border-b-2 border-transparent hover:border-teal-800 transition-colors">
               Gallery
             </a>
-            <a href="/about" className="text-gray-600 hover:text-teal-800 font-medium px-2 py-1 border-b-2 border-transparent hover:border-teal-800 transition-colors">
+            <a href="/about" className="text-gray-600 hover:text-cyan-900 font-medium px-2 py-1 border-b-2 border-transparent hover:border-cyan-900 transition-colors">
               About
             </a>
           </nav>
 
           {/* Contact Button */}
           <button
-            onClick={handleContactClick} // Set the onClick handler
-            className="bg-teal-800 text-white px-6 py-2 rounded-md hover:bg-teal-600 transition-colors"
+            onClick={handleContactClick} 
+            className="bg-cyan-900 text-white px-6 py-2 rounded-md hover:bg-teal-600 transition-colors"
           >
             Contact Us
           </button>

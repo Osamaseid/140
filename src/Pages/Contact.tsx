@@ -112,7 +112,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-teal-800 text-white py-3 px-6 rounded-md hover:bg-teal-900 transition-colors"
+              className="w-full bg-cyan-900 text-white py-3 px-6 rounded-md hover:bg-teal-900 transition-colors"
             >
               Send to Us
             </button>

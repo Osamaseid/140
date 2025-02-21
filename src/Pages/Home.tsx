@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Hero from "../Components/Hero";
 import LatestWorks from "../Components/LatestWorks";
 import Footer from "../Components/Footer";
+
 export default function Home() {
 
     const products = [
