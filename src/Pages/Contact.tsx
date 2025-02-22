@@ -26,6 +26,13 @@ const Contact = () => {
     });
   };
 
+  const openGoogleMaps = () => {
+    window.open(
+      "https://www.google.com/maps/place/Bole,+Addis+Ababa,+Ethiopia",
+      "_blank"
+    );
+  };
+
   return (
     <>
       <Header />
@@ -163,7 +170,10 @@ const Contact = () => {
                   <span className="text-lg text-black">contact@140.com</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <FaMapMarkerAlt className="w-5 h-5 text-cyan-900" />
+                  <FaMapMarkerAlt
+                    onClick={openGoogleMaps}
+                    className="w-5 h-5 text-cyan-900 cursor-pointer"
+                  />
                   <div className="text-lg text-black">
                     <p>Morning Star Mall, Bole Road, Addis Ababa, Ethiopia</p>
                   </div>
