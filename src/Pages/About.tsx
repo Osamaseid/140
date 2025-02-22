@@ -8,7 +8,6 @@ import sunlightLogo from '../assets/partenerslogo/Tsehay Real Estate Logo.png';
 import greenLogo from '../assets/partenerslogo/Gift Real Estate Logo.png';
 import React from 'react';
 import Footer from "../Components/Footer";
-import logo from "../assets/logo.png";
 
 
 const About: React.FC = () => {
