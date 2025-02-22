@@ -30,7 +30,7 @@ const Header: React.FC = () => {
           {/* Contact Button */}
           <button
             onClick={handleContactClick}
-            className="hidden md:block bg-cyan-900 text-white px-6 py-2 rounded-md hover:bg-teal-600 transition-colors"
+            className="hidden md:block bg-cyan-900 text-white px-6 py-2 rounded-md hover:bg-cyan-950 transition-colors"
           >
             Contact Us
           </button>

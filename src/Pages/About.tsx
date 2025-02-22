@@ -8,6 +8,7 @@ import sunlightLogo from '../assets/partenerslogo/Tsehay Real Estate Logo.png';
 import greenLogo from '../assets/partenerslogo/Gift Real Estate Logo.png';
 import React from 'react';
 import Footer from "../Components/Footer";
+import logo from "../assets/logo.png";
 
 
 const About: React.FC = () => {
@@ -28,7 +29,7 @@ const About: React.FC = () => {
       {/* Hero Banner */}
       <div className=" w-full h-48">
         <img
-          src="https://images.unsplash.com/photo-1654105727849-1b9d39357f16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2xhc3MlMjBmYWNhZGV8ZW58MHx8MHx8fDA%3D"
+          src= "https://images.unsplash.com/photo-1654105727849-1b9d39357f16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2xhc3MlMjBmYWNhZGV8ZW58MHx8MHx8fDA%3D"
           className=" w-full h-full px-24 py-4 object-cover"
         />
       </div>
@@ -83,7 +84,7 @@ const About: React.FC = () => {
 <div className="bg-gray-50 py-20">
   <div className="container mx-auto px-6">
     <div className="text-center">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-left">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-left">
         Testimonial
       </h2>
       <p className="text-lg text-gray-600 text-left">
@@ -94,7 +95,7 @@ const About: React.FC = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
       {[
         {
-          name: "Alice Smith",
+          name: "Thomas",
           testimonial:
             "This company completely transformed our business. Their expertise was invaluable, and we saw immediate results!",
           image:
@@ -102,7 +103,7 @@ const About: React.FC = () => {
           rating: 5,
         },
         {
-          name: "John Doe",
+          name: "Sarah",
           testimonial:
             "Exceptional service and outstanding support. They truly care about their clients, and it shows!",
           image:
@@ -110,7 +111,7 @@ const About: React.FC = () => {
           rating: 4,
         },
         {
-          name: "Emily Johnson",
+          name: "Beki",
           testimonial:
             "A seamless experience from start to finish! I highly recommend their services to anyone looking for real results.",
           image:
