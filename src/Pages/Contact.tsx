@@ -155,15 +155,15 @@ const Contact = () => {
               {/* Contact Information */}
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-3">
-                  <FaPhone className="w-5 h-5 text-blue-600" />
+                  <FaPhone className="w-5 h-5 text-cyan-900" />
                   <span className="text-lg text-black">+251 90 000 0000</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <FaEnvelope className="w-5 h-5 text-blue-600" />
+                  <FaEnvelope className="w-5 h-5 text-cyan-900" />
                   <span className="text-lg text-black">contact@140.com</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <FaMapMarkerAlt className="w-5 h-5 text-blue-600" />
+                  <FaMapMarkerAlt className="w-5 h-5 text-cyan-900" />
                   <div className="text-lg text-black">
                     <p>Morning Star Mall, Bole Road, Addis Ababa, Ethiopia</p>
                   </div>

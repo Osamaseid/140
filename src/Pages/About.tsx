@@ -80,57 +80,73 @@ const About: React.FC = () => {
         </div>
       </div>
 
-     {/* Testimonials Section */}
-     <div className="bg-gray-50 py-16">
+<div className="bg-gray-50 py-20">
   <div className="container mx-auto px-6">
-    <h2 className="text-2xl font-bold mb-12">Testimonials</h2>
-    <p className="text-gray-600 mb-12 max-w-3xl">
-      Hear what our clients have to say about us and our services.
-    </p>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="text-center">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 text-left">
+        Testimonial
+      </h2>
+      <p className="text-lg text-gray-600 text-left">
+        We take pride in our work, but don't just take our word for it here's what our clients have to say!
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
       {[
         {
           name: "Alice Smith",
-          testimonial: "This company transformed our business! Their expertise was invaluable.",
-          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300",
-          rating: 5
+          testimonial:
+            "This company completely transformed our business. Their expertise was invaluable, and we saw immediate results!",
+          image:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300",
+          rating: 5,
         },
         {
           name: "John Doe",
-          testimonial: "Exceptional service and support. I couldn't be happier!",
-          image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300",
-          rating: 4
+          testimonial:
+            "Exceptional service and outstanding support. They truly care about their clients, and it shows!",
+          image:
+            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300",
+          rating: 4,
         },
         {
           name: "Emily Johnson",
-          testimonial: "A great experience from start to finish. Highly recommend!",
-          image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300",
-          rating: 5
+          testimonial:
+            "A seamless experience from start to finish! I highly recommend their services to anyone looking for real results.",
+          image:
+            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300",
+          rating: 5,
         },
       ].map((testimonial) => (
-        <div 
-          key={testimonial.name} 
-          className="bg-white p-6 rounded-lg shadow-sm transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+        <div
+          key={testimonial.name}
+          className="bg-white p-6 rounded-2xl shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
-          <img
-            src={testimonial.image}
-            alt={testimonial.name}
-            className="w-full aspect-square rounded-lg object-cover mb-4"
-          />
-          <h3 className="font-semibold text-lg">{testimonial.name}</h3>
-          
-          {/* Star Rating using React Icons */}
-          <div className="flex items-center mb-2">
+          {/* Small Circular Image */}
+          <div className="flex items-center gap-4 mb-4">
+            <img
+              src={testimonial.image}
+              alt={testimonial.name}
+              className="w-14 h-14 rounded-full object-cover border-2 border-gray-300"
+            />
+            <h3 className="font-bold text-lg text-gray-800">{testimonial.name}</h3>
+          </div>
+
+          {/* Star Rating */}
+          <div className="flex items-center mb-3">
             {Array.from({ length: 5 }).map((_, i) => (
-              <AiFillStar 
-                key={i} 
-                size={20} 
-                className={i < testimonial.rating ? "text-yellow-500" : "text-gray-300"}
+              <AiFillStar
+                key={i}
+                size={20}
+                className={`transition-transform duration-200 ${
+                  i < testimonial.rating ? "text-yellow-500 scale-110" : "text-gray-300"
+                }`}
               />
             ))}
           </div>
 
-          <p className="text-gray-600 italic">"{testimonial.testimonial}"</p>
+          {/* Testimonial Text */}
+          <p className="text-gray-600 italic leading-relaxed">"{testimonial.testimonial}"</p>
         </div>
       ))}
     </div>
